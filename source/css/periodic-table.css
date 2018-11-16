@@ -1,0 +1,237 @@
+/* Configuração geral, retirando espaçamentos padrões dos navegadores */
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+/* Título padrão do site, colocado ao centro */
+h1{
+    text-align: center;
+}
+
+body{
+    background-image: url('background.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: auto;
+}
+
+/* Colocando cor de fundo na div com o título */
+div#container-title{
+    background-color: #FFD700;
+    margin-top: 10px;
+}
+
+/* Colocando cor de fundo na div com a tabela */
+div#container-table{
+    background-color: #F8F8FF;
+}
+
+/* Espaçamento entre os botões, para evitar que fiquem muito juntos */
+.separator-btn{
+    padding-left: 1px;
+}
+
+/* Separador de containers */
+.separator{
+    padding-top: 30px;
+    background-color: #F8F8FF;
+}
+
+/* Propriedades do botão da tabela */
+.btn{
+    width: 43px;
+    height: 43px;
+}
+
+/* Colocando qualquer table como centro da tela, junto de seus componentes */
+table{
+    margin: auto;
+    position: relative;
+}
+
+/* Configuração padrão do botão dos ametais */
+.btn-ametais {
+  color: #3CB371;
+  background-color: transparent;
+  background-image: none;
+  border-color: #3CB371;
+}
+/* Botão dos ametais ao passar o mouse em cima */
+.btn-ametais:hover {
+  color: #fff;
+  background-color: #3CB371;
+  border-color: #3CB371;
+}
+/* Botão dos ametais ao ser clicado */
+.btn-ametais:focus, .btn-ametais.focus {
+  box-shadow: 0 0 0 0.2rem rgba(60 ,179 ,113 , 0.5);
+}
+/**/
+.btn-ametais:not(:disabled):not(.disabled):active, .btn-ametais:not(:disabled):not(.disabled).active,
+.show > .btn-ametais.dropdown-toggle {
+  color: #fff;
+  background-color: #3CB371;
+  border-color: #3CB371;
+}
+/**/
+.btn-ametais:not(:disabled):not(.disabled):active:focus, .btn-ametais:not(:disabled):not(.disabled).active:focus,
+.show > .btn-ametais.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(60 ,179 ,113 , 0.5);
+}
+
+/* Configuração padrão dos botões dos metais */
+.btn-metais {
+  color: #E5E246;
+  background-color: transparent;
+  background-image: none;
+  border-color: #E5E246;
+}
+/* Botão dos metais ao passar o mouse em cima */
+.btn-metais:hover {
+  color: #fff;
+  background-color: #E5E246;
+  border-color: #E5E246;
+}
+/* Botão dos metais ao seu clicado */
+.btn-metais:focus, .btn-metais.focus {
+  box-shadow: 0 0 0 0.2rem rgba(229, 226, 70, 0.5);
+}
+/**/
+.btn-metais:not(:disabled):not(.disabled):active, .btn-metais:not(:disabled):not(.disabled).active,
+.show > .btn-metais.dropdown-toggle {
+  color: #fff;
+  background-color: #E5E246;
+  border-color: #E5E246;
+}
+/**/
+.btn-metais:not(:disabled):not(.disabled):active:focus, .btn-metais:not(:disabled):not(.disabled).active:focus,
+.show > .btn-metais.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(229, 226, 70, 0.5);
+}
+
+/* Configuração padrão dos botões desabilitados */
+.btn-desabilitados {
+  color: #DADAD6;
+  background-color: transparent;
+  background-image: none;
+  border-color: #DADAD6;
+}
+/* Botão dos desabilitados ao passar por cima */
+.btn-desabilitados:hover {
+  color: #fff;
+  background-color: #DADAD6;
+  border-color: #DADAD6;
+}
+/* Botão dos desabilitados ao clicar */
+.btn-desabilitados:focus, .btn-desabilitados.focus {
+  box-shadow: 0 0 0 0.2rem rgba(218, 218, 214, 0.5);
+}
+/* Botão dos desabilitados ao ser desabilitado */
+.btn-desabilitados.disabled, .btn-desabilitados:disabled {
+  color: #DADAD6;
+  background-color: transparent;
+}
+/**/
+.btn-desabilitados:not(:disabled):not(.disabled):active, .btn-desabilitados:not(:disabled):not(.disabled).active,
+.show > .btn-desabilitados.dropdown-toggle {
+  color: #fff;
+  background-color: #DADAD6;
+  border-color: #DADAD6;
+}
+/**/
+.btn-desabilitados:not(:disabled):not(.disabled):active:focus, .btn-desabilitados:not(:disabled):not(.disabled).active:focus,
+.show > .btn-desabilitados.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(218, 218, 214, 0.5);
+}
+
+/* Configuração padrão dos botões de gases nobres */
+.btn-gases-nobres {
+  color: #3737F1;
+  background-color: transparent;
+  background-image: none;
+  border-color: #3737F1;
+}
+/* Botão de gases nobres ao passar em cima */
+.btn-gases-nobres:hover {
+  color: #fff;
+  background-color: #3737F1;
+  border-color: #3737F1;
+}
+/* Botão de gases nobres ao ser clicado */
+.btn-gases-nobres:focus, .btn-gases-nobres.focus {
+  box-shadow: 0 0 0 0.2rem rgba(55, 55, 241, 0.5);
+}
+/**/
+.btn-gases-nobres:not(:disabled):not(.disabled):active, .btn-gases-nobres:not(:disabled):not(.disabled).active,
+.show > .btn-gases-nobres.dropdown-toggle {
+  color: #fff;
+  background-color: #3737F1;
+  border-color: #3737F1;
+}
+/**/
+.btn-gases-nobres:not(:disabled):not(.disabled):active:focus, .btn-gases-nobres:not(:disabled):not(.disabled).active:focus,
+.show > .btn-gases-nobres.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(55, 55, 241, 0.5);
+}
+
+/* Configuração padrão dos botões dos lantanídeos */
+.btn-lantanideos {
+  color: #FFA500;
+  background-color: transparent;
+  background-image: none;
+  border-color: #FFA500;
+}
+/* Botão dos lantanídeos ao passar em cima */
+.btn-lantanideos:hover {
+  color: #fff;
+  background-color: #FFA500;
+  border-color: #FFA500;
+}
+/* Botão dos lantanídeos ao ser clicado */
+.btn-lantanideos:focus, .btn-lantanideos.focus {
+  box-shadow: 0 0 0 0.2rem rgba(55, 55, 241, 0.5);
+}
+/**/
+.btn-lantanideos:not(:disabled):not(.disabled):active, .btn-lantanideos:not(:disabled):not(.disabled).active,
+.show > .btn-lantanideos.dropdown-toggle {
+  color: #fff;
+  background-color: #FFA500;
+  border-color: #FFA500;
+}
+/**/
+.btn-lantanideos:not(:disabled):not(.disabled):active:focus, .btn-lantanideos:not(:disabled):not(.disabled).active:focus,
+.show > .btn-lantanideos.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(55, 55, 241, 0.5);
+}
+
+/* Configuração padrão dos botões dos actinídeos */
+.btn-actinideos {
+  color: #FF69B4;
+  background-color: transparent;
+  background-image: none;
+  border-color: #FF69B4;
+}
+/* Botão dos actinídeos ao passar em cima */
+.btn-actinideos:hover {
+  color: #fff;
+  background-color: #FF69B4;
+  border-color: #FF69B4;
+}
+/* Botão dos actinídeos ao ser clicado */
+.btn-actinideos:focus, .btn-actinideos.focus {
+  box-shadow: 0 0 0 0.2rem rgba(55, 55, 241, 0.5);
+}
+/**/
+.btn-actinideos:not(:disabled):not(.disabled):active, .btn-actinideos:not(:disabled):not(.disabled).active,
+.show > .btn-actinideos.dropdown-toggle {
+  color: #fff;
+  background-color:	#FF69B4;
+  border-color:	#FF69B4;
+}
+/**/
+.btn-actinideos:not(:disabled):not(.disabled):active:focus, .btn-actinideos:not(:disabled):not(.disabled).active:focus,
+.show > .btn-actinideos.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(55, 55, 241, 0.5);
+}

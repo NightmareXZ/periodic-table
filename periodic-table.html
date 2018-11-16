@@ -1,0 +1,404 @@
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Tabela períodica</title>
+        <link rel="icon" type="imagem/png" href="source/images/icon.png"/>
+        <link rel="stylesheet" type="text/css" href="source/bootstrap/dist/css/bootstrap.css"/>
+        <link rel="stylesheet" type="text/css" href="source/css/periodic-table.css"/>
+    </head>
+    <body>
+        <div class="container" id="container-title">
+            <div class="row">
+                <div class="col">
+                    <h1>Tabela períodica</h1>
+                </div>
+            </div>
+        </div>
+        <div class="container separator"></div>
+        <div class="container" id="container-table">
+            <div class="row">
+                <div class="col">
+                    <table>
+                        <tr>
+                            <td><button class="btn btn-ametais" onclick="showInfo('Hidrogênio','Ametal',1,1)">H</button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-desabilitados disabled"></button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-desabilitados disabled"></button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-desabilitados disabled"></button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-desabilitados disabled"></button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-desabilitados disabled"></button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-desabilitados disabled"></button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-desabilitados disabled"></button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-desabilitados disabled"></button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-desabilitados disabled"></button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-desabilitados disabled"></button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-desabilitados disabled"></button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-desabilitados disabled"></button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-desabilitados disabled"></button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-desabilitados disabled"></button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-desabilitados disabled"></button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-desabilitados disabled"></button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-gases-nobres" onclick="showInfo('Hélio','Gás nobre',2,4)">He</button></td>
+                        </tr>
+                        <tr>
+                            <td><button class="btn btn-metais" onclick="showInfo('Lítio','Metal',3,7)">Li</button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-metais" onclick="showInfo('Berílio','Metal',4,9)">Be</button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-desabilitados disabled"></button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-desabilitados disabled"></button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-desabilitados disabled"></button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-desabilitados disabled"></button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-desabilitados disabled"></button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-desabilitados disabled"></button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-desabilitados disabled"></button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-desabilitados disabled"></button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-desabilitados disabled"></button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-desabilitados disabled"></button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-ametais" onclick="showInfo('Boro','Ametal',5,10.8)">B</button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-ametais" onclick="showInfo('Carbono','Ametal',6,12)">C</button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-ametais" onclick="showInfo('Nitrogênio','Ametal',7,14)">N</button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-ametais" onclick="showInfo('Oxigênio','Ametal',8,16)">O</button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-ametais" onclick="showInfo('Flúor','Ametal',9,19)">F</button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-gases-nobres" onclick="showInfo('Neônio','Gás nobre',10,20)">Ne</button></td>
+                        </tr>
+                        <tr>
+                            <td><button class="btn btn-metais" onclick="showInfo('Sódio','Metal',11,23)">Na</button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-metais" onclick="showInfo('Magnésio','Metal',12,24.3)">Mg</button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-desabilitados disabled"></button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-desabilitados disabled"></button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-desabilitados disabled"></button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-desabilitados disabled"></button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-desabilitados disabled"></button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-desabilitados disabled"></button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-desabilitados disabled"></button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-desabilitados disabled"></button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-desabilitados disabled"></button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-desabilitados disabled"></button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-metais" onclick="showInfo('Alumínio','Metal',13,27)">Al</button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-ametais" onclick="showInfo('Silício','Ametal',14,28)">Si</button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-ametais" onclick="showInfo('Fósforo','Ametal',15,31)">P</button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-ametais" onclick="showInfo('Enxofre','Ametal',16,32)">S</button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-ametais" onclick="showInfo('Cloro','Ametal',17,35.4)">Cl</button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-gases-nobres" onclick="showInfo('Argônio','Gás nobre',18,40)">Ar</button></td>
+                        </tr>
+                        <tr>
+                            <td><button class="btn btn-metais" onclick="showInfo('Potássio','Metal',19,39)">K</button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-metais" onclick="showInfo('Cálcio','Metal',20,40)">Ca</button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-metais" onclick="showInfo('Escândio','Metal',21,45)">Sc</button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-metais" onclick="showInfo('Titânio','Metal',22,48)">Ti</button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-metais" onclick="showInfo('Vanádio','Metal',23,51)">V</button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-metais" onclick="showInfo('Crômio','Metal',24,52)">Cr</button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-metais" onclick="showInfo('Manganês','Metal',25,55)">Mn</button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-metais" onclick="showInfo('Ferro','Metal',26,56)">Fe</button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-metais" onclick="showInfo('Cobalto','Metal',27,59)">Co</button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-metais" onclick="showInfo('Níquel','Metal',28,58,7)">Ni</button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-metais" onclick="showInfo('Cobre','Metal',29,63.5)">Cu</button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-metais" onclick="showInfo('Zinco','Metal',30,65.4)">Zn</button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-metais" onclick="showInfo('Gálio','Metal',31,70)">Ga</button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-ametais" onclick="showInfo('Germânio','Ametal',32,72.6)">Ge</button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-ametais" onclick="showInfo('Arsênio','Ametal',33,75)">As</button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-ametais" onclick="showInfo('Selênio','Ametal',34,79)">Se</button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-ametais" onclick="showInfo('Bromo','Ametal',35,80)">Br</button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-gases-nobres" onclick="showInfo('Criptônio','Gás nobre',36,84)">Kr</button></td>
+                        </tr>
+                        <tr>
+                            <td><button class="btn btn-metais" onclick="showInfo('Rubídio','Metal',37,85.5)">Rb</button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-metais" onclick="showInfo('Estrôncio','Metal',38,87.6)">Sr</button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-metais" onclick="showInfo('Ítrio','Metal',39,89)">Y</button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-metais" onclick="showInfo('Zircônio','Metal',40,91)">Zr</button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-metais" onclick="showInfo('Nióbio','Metal',41,93)">Nb</button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-metais" onclick="showInfo('Molibdênio','Metal',42,96)">Mo</button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-metais" onclick="showInfo('Tecnécio','Metal',43,98)">Tc</button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-metais" onclick="showInfo('Rutênio','Metal',44,101)">Ru</button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-metais" onclick="showInfo('Ródio','Metal',45,103)">Rh</button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-metais" onclick="showInfo('Paládio','Metal',46,106.5)">Pd</button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-metais" onclick="showInfo('Prata','Metal',47,108)">Ag</button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-metais" onclick="showInfo('Cádmio','Metal',48,112.5)">Cd</button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-metais" onclick="showInfo('Índio','Metal',49,115)">In</button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-metais" onclick="showInfo('Estanho','Metal',50,118.7)">Sn</button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-ametais" onclick="showInfo('Antimônio','Ametal',51,121)">Sb</button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-ametais" onclick="showInfo('Telúrio','Ametal',52,127.6)">Te</button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-ametais" onclick="showInfo('Iodo','Ametal',53,127)">I</button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-gases-nobres" onclick="showInfo('Xenônio','Gás nobre',54,131.3)">Xe</button></td>
+                        </tr>
+                        <tr>
+                            <td><button class="btn btn-metais" onclick="showInfo('Césio','Metal',55,133)">Cs</button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-metais" onclick="showInfo('Bário','Metal',56,137.3)">Ba</button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-lantanideos" onclick="showLantanideos()"></button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-metais" onclick="showInfo('Háfnio','Metal',72,178.5)">Hf</button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-metais" onclick="showInfo('Tântalo','Metal',73,184)">Ta</button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-metais" onclick="showInfo('Tungstênio','Metal',74,184)">W</button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-metais" onclick="showInfo('Rênio','Metal',75,186)">Re</button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-metais" onclick="showInfo('Ósmio','Metal',76,190)">Os</button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-metais" onclick="showInfo('Irídio','Metal',77,192)">Ir</button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-metais" onclick="showInfo('Platina','Metal',78,195)">Pt</button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-metais" onclick="showInfo('Ouro','Metal',79,197)">Au</button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-metais" onclick="showInfo('Mercúrio','Metal',80,200.5)">Hg</button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-metais" onclick="showInfo('Tálio','Metal',81,204.3)">Tl</button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-metais" onclick="showInfo('Chumbo','Metal',82,207)">Pb</button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-metais" onclick="showInfo('Bismuto','Metal',83,209)">Bi</button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-ametais" onclick="showInfo('Polônio','Ametal',84,209)">Po</button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-ametais" onclick="showInfo('Astato','Ametal',85,210)">At</button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-gases-nobres" onclick="showInfo('Radônio','Gás nobre',86,222)">Rn</button></td>
+                        </tr>
+                        <tr>
+                            <td><button class="btn btn-metais" onclick="showInfo('Frâncio','Metal',87,223)">Fr</button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-metais" onclick="showInfo('Rádio','Metal',88,226)">Ra</button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-actinideos" onclick="showActinideos()"></button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-metais" onclick="showInfo('Rutherfórdio','Metal',104,267)">Rf</button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-metais" onclick="showInfo('Dúbnio','Metal',105,268)">Db</button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-metais" onclick="showInfo('Seabórgio','Metal',106,271)">Sg</button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-metais" onclick="showInfo('Bóhrio','Metal',107,272)">Bh</button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-metais" onclick="showInfo('Hássio','Metal',108,270)">Hs</button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-metais" onclick="showInfo('Meitnério','Metal',109,276)">Mt</button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-metais" onclick="showInfo('Darmstádio','Metal',110,281)">Ds</button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-metais" onclick="showInfo('Roentgênio','Metal',111,280)">Rg</button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-metais" onclick="showInfo('Copernício','Metal',112,285)">Cn</button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-metais" onclick="showInfo('Nihônio','Metal',113,284)">Nh</button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-metais" onclick="showInfo('Fleróvio','Metal',114,289)">Fl</button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-metais" onclick="showInfo('Moscóvio','Metal',115,288)">Mc</button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-metais" onclick="showInfo('Livermório','Metal',116,293)">Lv</button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-ametais" onclick="showInfo('Tenesso','Ametal',117,294)">Ts</button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-gases-nobres" onclick="showInfo('Oganessômio','Gás nobre',118,294)">Og</button></td>
+                        </tr>
+                        <tr>
+                            <td><button class="btn btn-desabilitados disabled"></button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-desabilitados disabled"></button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-desabilitados disabled"></button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-desabilitados disabled"></button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-desabilitados disabled"></button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-desabilitados disabled"></button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-desabilitados disabled"></button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-desabilitados disabled"></button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-desabilitados disabled"></button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-desabilitados disabled"></button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-desabilitados disabled"></button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-desabilitados disabled"></button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-desabilitados disabled"></button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-desabilitados disabled"></button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-desabilitados disabled"></button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-desabilitados disabled"></button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-desabilitados disabled"></button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-desabilitados disabled"></button></td>
+                        </tr>
+                        <tr>
+                            <td><button class="btn btn-desabilitados disabled"></button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-desabilitados disabled"></button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-desabilitados disabled"></button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-lantanideos" onclick="showInfo('Lantânio','Metal',57,139)">La</button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-lantanideos" onclick="showInfo('Cério','Metal',58,140)">Ce</button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-lantanideos" onclick="showInfo('Praseódmio','Metal',59,141)">Pr</button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-lantanideos" onclick="showInfo('Neodimio','Metal',60,144)">Nd</button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-lantanideos" onclick="showInfo('Promécio','Metal',61,145)">Pm</button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-lantanideos" onclick="showInfo('Samário','Metal',62,150.4)">Sm</button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-lantanideos" onclick="showInfo('Európio','Metal',63,152)">Eu</button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-lantanideos" onclick="showInfo('Gadolínio','Metal',64,157.3)">Gd</button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-lantanideos" onclick="showInfo('Térbio','Metal',65,159)">Tb</button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-lantanideos" onclick="showInfo('Dispróssio','Metal',66,162.5)">Dy</button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-lantanideos" onclick="showInfo('Hólmio','Metal',67,165)">Ho</button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-lantanideos" onclick="showInfo('Érbio','Metal',68,167)">Er</button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-lantanideos" onclick="showInfo('Túlio','Metal',69,169)">Tm</button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-lantanideos" onclick="showInfo('Itérbio','Metal',70,173)">Yb</button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-lantanideos" onclick="showInfo('Lutécio','Metal',71,175)">Lu</button></td>
+                        </tr>
+                        <tr>
+                            <td><button class="btn btn-desabilitados disabled"></button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-desabilitados disabled"></button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-desabilitados disabled"></button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-actinideos" onclick="showInfo('Actínio','Metal',89,227)">Ac</button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-actinideos" onclick="showInfo('Tório','Metal',90,232)">Th</button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-actinideos" onclick="showInfo('Protactínio','Metal',91,231)">Pa</button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-actinideos" onclick="showInfo('Urânio','Metal',92,238)">U</button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-actinideos" onclick="showInfo('Neptúnio','Metal',93,237)">Np</button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-actinideos" onclick="showInfo('Plutônio','Metal',94,244)">Pu</button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-actinideos" onclick="showInfo('Amerício','Metal',95,243)">Am</button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-actinideos" onclick="showInfo('Cúrio','Metal',96,247)">Cm</button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-actinideos" onclick="showInfo('Berquélio','Metal',97,247)">Bk</button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-actinideos" onclick="showInfo('Califórinio','Metal',98,251)">Cf</button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-actinideos" onclick="showInfo('Einstênio','Metal',99,252)">Es</button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-actinideos" onclick="showInfo('Férmio','Metal',100,257)">Fm</button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-actinideos" onclick="showInfo('Mendelévio','Metal',101,258)">Md</button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-actinideos" onclick="showInfo('Nobélio','Metal',102,259)">No</button></td>
+                            <td><div class="separator-btn"></div></td>
+                            <td><button class="btn btn-actinideos" onclick="showInfo('Laurêncio','Metal',103,262)">Lr</button></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="container separator"></div>
+            </div>
+        </div>
+
+        <script src="source/jquery/dist/jquery.min.js"></script>
+        <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>-->
+        <script src="source/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="source/sweetalert/dist/sweetalert.min.js"></script>
+        <script src="source/js/periodic-table.js"></script>
+    </body>
+</html>
